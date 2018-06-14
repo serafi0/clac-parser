@@ -41,7 +41,7 @@ int main()
     string str;
     char ch;
     ifstream infile;
-    infile.open("/Users/mohamedelserafy/CLionProjects/parser for calc/calc.txt");
+    infile.open("/Users/mohamedelserafy/CLionProjects/parser for calc/calc.txt"); //<---- type text file path here
     while (!infile.eof())
     {
         getline(infile,str);
