@@ -24,7 +24,7 @@ namespace client {
 
                                   (double_[ref(n) = _1]
                                           >> *('/' >> double_[ref(n) /=_1]|
-                                                  '-' >> double_[ref(n) /=_1]|
+                                                  '-' >> double_[ref(n) -=_1]|
                                                   '*' >> double_[ref(n) *=_1]|
                                                   '+' >> double_[ref(n) += _1]))
                                          ,space);
